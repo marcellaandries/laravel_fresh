@@ -4,5 +4,9 @@
     <li><a href="">About</li>
 </ul>   
 <p>
-    About page
+    About page description
+</p>
+<p>
+    Username is: {{ $un }}.<br>
+    Age of {{ $un }} is {{ $age }}.
 </p>
