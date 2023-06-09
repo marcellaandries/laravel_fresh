@@ -3,12 +3,12 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return redirect('home');
-});
+    return view('home');
+})->name('front_home');
 
-Route::get('/about/{username}/{age}', function ($username, $age) {
-    return view('about_page',['un'=>$username, 'age'=>$age]);
-});
+Route::get('/about', function () {
+    return view('about_page');
+})->name('front_about');
 
 
 
@@ -35,3 +35,6 @@ Route::get('/about/{username}/{age}', function ($username, $age) {
 // Route::get('/about/{username}/{age}', function ($username, $age) {
 //     return view('about_page',['un'=>$username, 'age'=>$age]);
 // });
+
+// Route::get('/', function () {
+//     return redirect('about');

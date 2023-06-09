@@ -14,3 +14,4 @@ php artisan config:cache
 
 //url, page
 Route::view('/about/cella', 'about_page');
+

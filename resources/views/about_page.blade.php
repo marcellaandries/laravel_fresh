@@ -1,12 +1,8 @@
 <h1>Home Page </h1>   
 <ul>
-    <li><a href="">Home</li>
-    <li><a href="">About</li>
+    <li><a href="{{ route('front_home') }}">Home</li>
+    <li><a href="{{ route('front_about') }}">About</li>
 </ul>   
 <p>
     About page description
-</p>
-<p>
-    Username is: {{ $un }}.<br>
-    Age of {{ $un }} is {{ $age }}.
 </p>

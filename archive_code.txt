@@ -1,0 +1,5 @@
+// about page blade
+<p>
+    Username is: {{ $un }}.<br>
+    Age of {{ $un }} is {{ $age }}.
+</p>
