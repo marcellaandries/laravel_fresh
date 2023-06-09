@@ -1,20 +1,17 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\StudentController;
+
+// controller formula:
+// route path
+// controller, function
+// route name
+Route::get('/', [StudentController::class, 'home'])->name('student.home');
+Route::get('/about', [StudentController::class, 'about'])->name('student.about');
 
 
-// route formula
-// url path
-// view
-// url name
 
-Route::get('/', function () {
-    return view('home');
-})->name('front_home');
-
-Route::get('/about', function () {
-    return view('about_page');
-})->name('front_about');
 
 
 

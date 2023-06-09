@@ -34,9 +34,27 @@ Route::get('/about', function () {
     return view('about_page');
 })->name('front_about');
 
+----------------------
+// route formula:
+// route path
+// function to return view
+// route name
+
+// Route::get('/', function () {
+//     return view('home');
+// })->name('front_home');
+
+// Route::get('/about', function () {
+//     return view('about_page');
+// })->name('front_about');
+
 ***************************************************************************************
 CONTROLLER
 php artisan make:controller StudentController
 
+// controller formula:
+// route path
+// controller, function
+// route name
 
 
