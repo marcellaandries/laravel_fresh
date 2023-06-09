@@ -16,8 +16,9 @@ class StudentController extends Controller
         return view('about');
     }
 
-    public function profile($uname){
-        return view('profile', ['un'=>$uname]);
+    // . meaning subfolder
+    public function profile($uname, $age){
+        return view('student.profile', ['un'=>$uname, 'age'=>$age]);
     }
 
      

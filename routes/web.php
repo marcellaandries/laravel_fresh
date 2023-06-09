@@ -9,7 +9,7 @@ use App\Http\Controllers\StudentController;
 // route name
 Route::get('/', [StudentController::class, 'home'])->name('student.home');
 Route::get('/about', [StudentController::class, 'about'])->name('student.about');
-Route::get('/profile/{username}', [StudentController::class, 'profile'])->name('student.profile');
+Route::get('/profile/{username}/{age}', [StudentController::class, 'profile'])->name('student.profile');
 
 
 

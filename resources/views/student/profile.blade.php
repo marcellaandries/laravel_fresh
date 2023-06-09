@@ -4,5 +4,6 @@
     <li><a href="{{ route('student.about') }}">About</a></li>
 </ul>
 <p>
-    The username is: {{ $un }}
+    The username is: {{ $un }}.<br/>
+    Age of {{ $un }} is {{ $age }}.
 </p>
