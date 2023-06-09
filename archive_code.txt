@@ -19,3 +19,7 @@
 
 // Route::get('/', function () {
 //     return redirect('about');
+
+<ul>
+    <li><a href="{{ route('front_about') }}">About</li>
+</ul>
