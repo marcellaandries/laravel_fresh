@@ -16,3 +16,4 @@ Route::get('/about', function () {
 })->name('front_about');
 
 
+

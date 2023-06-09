@@ -15,3 +15,22 @@ php artisan config:cache
 //url, page
 Route::view('/about/cella', 'about_page');
 
+============================================
+//url view -> web route
+//view
+<ul>
+    <li><a href="{{ url('/') }}">Home</li>
+    <li><a href="{{ url('/about') }}">About</li>
+</ul>   
+
+//web route
+Route::get('/', function () {
+    return view('home');
+})->name('front_home');
+
+Route::get('/about', function () {
+    return view('about_page');
+})->name('front_about');
+
+
+
