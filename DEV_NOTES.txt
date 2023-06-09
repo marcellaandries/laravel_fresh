@@ -1,0 +1,16 @@
+composer create-project laravel/laravel laravel_fresh
+
+php artisan serve -> to npm run serve
+
+php artisan -> too see cmd
+composer update -> to npm i
+
+to clear cache:
+php artisan cache:clear
+php artisan view:clear
+php artisan route:clear
+php artisan clear-compiled
+php artisan config:cache
+
+//url, page
+Route::view('/about/cella', 'about_page');
