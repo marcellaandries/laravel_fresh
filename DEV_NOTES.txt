@@ -59,3 +59,5 @@ php artisan make:controller StudentController
 
 https://laravel.com/docs/10.x/blade#displaying-unescaped-data
 
+name in web should be the same with name in home.blade e.g student_home
+
