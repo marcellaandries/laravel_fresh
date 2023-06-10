@@ -8,6 +8,10 @@ class StudentController extends Controller
 {
     
     //new code
+    public function index(){
+        return view('welcome');
+    }
+
     public function home(){
         return view('home');
     }
