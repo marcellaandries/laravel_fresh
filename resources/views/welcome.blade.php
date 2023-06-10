@@ -1,5 +1,12 @@
 <h1>Test</h1>
 
+@forelse($student_name as $value) 
+    {!! $value !!} <br>
+    <!-- {{ $value }} <br> -->
+@empty
+    Sorry! No result is found
+@endforelse
+
 <!-- @foreach($student_name as $value) 
     {{ $value }} <br>
 @endforeach
@@ -8,7 +15,7 @@
     {{ $i.' ' }}
 @endfor -->
 
-@php
+<!-- @php
 $i=10
 @endphp
 
@@ -16,4 +23,4 @@ $i=10
 This is fine
 @else
 This is not fine
-@endif
+@endif -->

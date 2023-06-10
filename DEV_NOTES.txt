@@ -57,4 +57,5 @@ php artisan make:controller StudentController
 // controller, function
 // route name
 
+https://laravel.com/docs/10.x/blade#displaying-unescaped-data
 
