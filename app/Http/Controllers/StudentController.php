@@ -16,9 +16,9 @@ class StudentController extends Controller
         ];
 
         // dd($data);
-        foreach($data['student_name'] as $value) {
-            echo $value.'-';
-        }
+        // foreach($data['student_name'] as $value) {
+        //     echo $value.'-';
+        // }
 
         return view('welcome', $data);
     }
